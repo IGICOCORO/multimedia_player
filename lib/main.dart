@@ -50,7 +50,7 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Colors.black,
       body: Stack(
         children: [
-          Image.asset("images/music_poster.jpg",fit: BoxFit.cover,
+          Image.asset("images/microphone.jpg",fit: BoxFit.cover,
             height: double.infinity,
             width: double.infinity,),
           Container(
@@ -102,7 +102,7 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.audiotrack),
+        child: Icon(Icons.audiotrack,color: Colors.lime,),
         onPressed: () async{
           String filePath = await FilePicker.getFilePath();
           _audioPlayer.play(filePath, isLocal: true);
